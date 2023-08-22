@@ -1,0 +1,97 @@
+@import "variables", "carrousel", "cards", "temp", "imagenIg", "aside", "botonetes", "copas", "musica" ;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Tenor Sans', sans-serif;
+  background-color: rgb(238, 219, 205);
+
+  h2,
+  h3 {
+
+    font-size: 50px;
+  }
+
+  .Temporizador {
+    background-color: $colorcitoLindo;
+    align-items: center;
+
+  }
+
+  .TemporizadorTabla {
+    background-color: rgb(179, 255, 0);
+  }
+ 
+}
+
+main {
+  h3 {
+    color: $colorTitulos;
+  }
+
+}
+
+
+
+
+#page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+// Estilos para las cajas
+@media (min-width: 900px) {
+  .mi-sección {
+    display: flex;
+    /* Cambio a flexbox para alinear las cajas */
+    justify-content: space-between;
+    /* Distribuir las cajas con espacio entre ellas */
+    align-items: flex-start;
+    /* Alinear las cajas en la parte superior */
+  }
+
+  .Caja {
+    background-color: $colorcitoLindo;
+    margin: 0.6rem;
+    flex: 1;
+    /* Ocupar espacio igual entre las cajas */
+    margin-left: auto;
+    width: 33%;
+  }
+}
