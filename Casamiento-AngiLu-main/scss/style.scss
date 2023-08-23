@@ -66,11 +66,13 @@ main {
   }
 
   .Caja {
-    background-color: $colorcitoLindo;
+    background-color: rgb(232, 213, 201);
     margin: 0.6rem;
     flex: 1;
     /* Ocupar espacio igual entre las cajas */
     margin-left: auto;
     width: 33%;
   }
+
+
 }
