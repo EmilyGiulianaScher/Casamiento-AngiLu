@@ -1,0 +1,33 @@
+.emoji {
+    color: $colorEmoji;
+    border-color: $colorTitulos;
+    margin-bottom: 10px;
+}
+
+.emoji:hover {
+    color: rgb(255, 234, 223);
+    background-color: rgb(226, 182, 158);
+}
+    .Caja {
+        background-color: rgb(250, 232, 219);
+        padding: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    button {
+        color: rgb(236, 174, 174);
+        border-radius: 3px;
+        padding: 10px;
+        box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.3);
+        border-color: $colorBoton;
+        border-style: none;
+
+    }
+
+    button:hover {
+        background-color: rgb(150, 125, 116);
+        color: bisque;
+    }
+

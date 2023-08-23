@@ -1,0 +1,39 @@
+.parallaxCont {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+
+  .parallax {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .parallax img {
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+  }
+  .cbuTitulo {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 4rem;
+  }
+  .image-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+  }
+}
