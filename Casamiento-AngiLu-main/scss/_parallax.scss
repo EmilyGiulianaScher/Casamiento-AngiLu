@@ -1,39 +1,43 @@
-.parallaxCont {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 2rem 6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 999;
 
+ 
   .parallax {
-    height: 100vh;
+    position: relative;
+
     display: flex;
-    justify-content: center;
     align-items: center;
-  }
+    text-align: center;
+ 
+
   .parallax img {
-    position: absolute;
-    width: 100%;
+    position:relative;
+   
     bottom: -50px;
+    background-size: cover;
+    
   }
-  .cbuTitulo {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    font-size: 4rem;
-  }
+ 
   .image-text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    color: rgb(0, 0, 0);
-    padding: 20px;
+    background-color: rgba(250, 250, 250, 0.759);
+    padding: 2rem 3rem ;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-}
+  .emoji2{
+    color: rgb(202,124,133);
+  }
+  .datosCbu{
+    margin-top: 20px;
+    background-color: rgba(208, 187, 182, 0.554);
+    
+
+    a{
+      color: black;
+    }
+  }
+
+  }
