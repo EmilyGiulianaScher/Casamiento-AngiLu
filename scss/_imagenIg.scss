@@ -1,45 +1,66 @@
-// Estilos para la sección .imagenInstagram
 .imagenInstagram {
-    background-image: url(../imagenes/20.jpeg);
+    position: relative;
+    background-image: url(../imagenes/20.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
 
-   padding-top: 10.5rem;
-   padding-bottom: 6rem;
-   text-align: center;
-   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-
-  margin-bottom: 70px;
-
-    h3 {
-       display: inline-block;
-        //font-size: 36px;
-        color: rgb(128, 98, 83);
-       margin-bottom: 290px;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.329);
-        
-  
-  background-color: rgb(236, 218, 207);
-  border-radius: 4px;
+    .ANGILU {
+        font-size: 4rem;
+        color: $colorcitoLindo;
+        margin-bottom: 25%;
+        padding-top: 2rem;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    }
+    .textoContenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        @media (max-width: 1000px) {
+            flex-direction: column; 
+            align-items: flex-end; 
+            margin-left: 60%;
+        }
+    }
+    .p-container {
+        flex: 1;
+        padding: 0 1rem; /* Espacio entre elementos */
     }
 
-   h4{
-    display:flexbox;
-        font-size: 24px;
-        color: $colorTitulos;
-        background-color: rgb(236, 218, 207);
-        line-height: 3.25rem;
-     
-    }
-
-
-    .InstagramBoton{
-        margin-top: 80px;
+    .ptexto {
+        font-size: 2.5rem;
+        color: rgb(255, 255, 255);
+        background-color: rgba(236, 218, 207, 0.162);
+        line-height: 1.5;
+        padding: 1rem;
+        border-radius: 20px;
+        margin: 0.5rem;
         text-align: center;
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
     }
-  
+    .InstagramBoton {
+        margin-top: 10%;
+    }
+    .izquierdo {
+        margin-left: 0.5rem;
+    }
+    .derecho {
+        margin-right: 0.5rem;
+    }
+
+    @media (max-width: 700px) {
+        .ptexto {
+            font-size: 1.2rem;
+        }
+    }
+    @media (max-width: 352) {
+        .ptexto {
+            font-size: 0.9rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+        }
+    }
 }

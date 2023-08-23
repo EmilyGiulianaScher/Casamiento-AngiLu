@@ -1,47 +1,21 @@
-@import "variables", "carrousel", "cards", "temp", "imagenIg", "aside", "botonetes", "copas", "musica" ;
+@import "reset","variables", "carrousel", "cards", "temp", "imagenIg", "aside", "botonetes", "copas", "musica", "parallax" ;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  font: inherit;
-}
-
-img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-textarea,
-button,
-select {
-  font: inherit;
-}
-
-html {
-  color-scheme: dark light;
-}
 
 
 body {
+  
   min-height: 100vh;
   box-sizing: border-box;
   font-family: 'Tenor Sans', sans-serif;
   background-color: rgb(238, 219, 205);
-
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   h2,
   h3 {
 
-    font-size: 50px;
+    font-size: 3rem;
   }
 
   .Temporizador {
@@ -66,10 +40,15 @@ main {
 
 
 
+
 #page-wrapper {
   display: flex;
   flex-wrap: wrap;
+
 }
+
+
+
 
 
 

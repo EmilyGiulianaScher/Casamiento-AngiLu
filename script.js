@@ -53,3 +53,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Refresh every second
     setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
 });
+const FotoConFondo = document.querySelector("FotoConFondo");
+const FotoSinFondo = document.querySelector("FotoSinFondo");
+const cbuTitulo = document.querySelector("cbuTitulo");
+
+window.addEventListener("scroll", () => {
+    let scroll = window.scrollY;
+
+    FotoConFondo.style.top = scroll * 0.2 + "px";
+})
+
+
+
+
